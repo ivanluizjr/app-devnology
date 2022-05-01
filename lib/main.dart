@@ -1,4 +1,4 @@
-import 'package:app_devnology/home_page.dart';
+import 'package:app_devnology/src/presentation/views/principal_page_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const PrincipalPageView(),
     );
   }
 }
