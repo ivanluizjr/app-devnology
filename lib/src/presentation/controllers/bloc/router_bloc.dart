@@ -5,19 +5,51 @@ import 'package:bloc/bloc.dart';
 class RouterBloc extends Bloc<RouterEvent, RouterState> {
   RouterBloc() : super(PrincipalPageState()) {
     on<HomePageEvent>(
-      ((event, emit) {
+      (event, emit) {
         emit(
           PrincipalPageState(),
         );
         emit(
           HomePageState(),
         );
-      }),
+      },
     );
 
     on<PrincipalPageEvent>(
       (event, emit) => emit(
         PrincipalPageState(),
+      ),
+    );
+
+    on<ProductPageEvent>(
+      (event, emit) {
+        emit(
+          HomePageState(),
+        );
+        emit(
+          ProductPageState(),
+        );
+      },
+    );
+
+    on<CartPageEvent>((event, emit) {
+      emit(
+        HomePageState(),
+      );
+      emit(
+        CartPageState(),
+      );
+    });
+
+    on<NullPageEvent>(
+      (event, emit) => emit(
+        NullPageState(),
+      ),
+    );
+
+    on<SearchPageEvent>(
+      (event, emit) => emit(
+        SearchPageState(),
       ),
     );
   }

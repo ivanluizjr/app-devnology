@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../controllers/bloc/router_bloc.dart';
 import '../controllers/bloc/router_event.dart';
 import '../controllers/bloc/router_state.dart';
-import '../utils/constants/colors.dart';
+import '../utils/constants/colors_constants.dart';
 import '../views/home_page_view.dart';
 import 'transition_widget.dart';
 

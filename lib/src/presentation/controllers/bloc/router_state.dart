@@ -14,3 +14,7 @@ class ProductPageState extends RouterState {}
 class CartPageState extends RouterState {}
 
 class OrderPageState extends RouterState {}
+
+class NullPageState extends RouterState {}
+
+class SearchPageState extends RouterState {}

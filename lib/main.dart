@@ -1,20 +1,7 @@
-import 'package:app_devnology/src/presentation/views/principal_page_view.dart';
 import 'package:flutter/material.dart';
 
+import 'src/presentation/widgets/devnology_widget.dart';
+
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const PrincipalPageView(),
-    );
-  }
+  runApp(const DevNoLogyWidget());
 }
