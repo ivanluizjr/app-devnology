@@ -8,3 +8,13 @@ abstract class RouterEvent extends Equatable {
 class HomePageEvent extends RouterEvent {}
 
 class PrincipalPageEvent extends RouterEvent {}
+
+class ProductPageEvent extends RouterEvent {}
+
+class CartPageEvent extends RouterEvent {}
+
+class OrderPageEvent extends RouterEvent {}
+
+class NullPageEvent extends RouterEvent {}
+
+class SearchPageEvent extends RouterEvent {}
