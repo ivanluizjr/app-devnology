@@ -1,6 +1,6 @@
 # :shield: App DevNoLogy
 
-Este projeto foi um desafio para construir um projeto do zero, onde o objetivo era somente fazer a navegação entre as telas.
+Este projeto foi um desafio para construir um app do zero, onde o objetivo era somente fazer a navegação entre as telas.
 
 ## :heavy_check_mark: Telas do projeto e fluxo a seguir
 
