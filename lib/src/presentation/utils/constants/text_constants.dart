@@ -67,14 +67,14 @@ const kTextoLenovoHome01Valor = Text(
 );
 
 const kTextoLenovoHome02 = Text(
-  'Lenovo 15.6"\nThinkPad P15s Gen 1',
+  'Lenovo 15.6"\nThinkPad P15sGen 1',
   style: TextStyle(fontSize: 12),
 );
 
 const kTextoLenovoHome02Valor = Text(
   '\$ 1,519.00',
   style: TextStyle(
-    fontSize: 20,
+    fontSize: 18,
     color: Colors.black,
     fontWeight: FontWeight.bold,
   ),
