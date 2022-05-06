@@ -144,3 +144,67 @@ const kTextoProductPageValor = Text(
     color: Color(0xFF2E3746),
   ),
 );
+
+const kTextoCart = Text(
+  'Cart',
+  style: TextStyle(
+      fontSize: 30,
+      fontWeight: FontWeight.bold,
+      fontFamily: 'Roboto',
+      color: kColorSplashAppBarMenus),
+);
+
+const kTextoCartLenovo01 = Text('Lenovo 15.6" ThinkPad P15s Gen 1\n'
+    'Laptop, Intel Core i7-10510U Quad-Core,\n'
+    '16GB DDR4 RAM, 512GB');
+
+const kTextoCartPreco01 = Text(
+  '\$ 1,519.99',
+  style: TextStyle(
+    fontWeight: FontWeight.w800,
+    fontSize: 20,
+    color: Colors.black,
+  ),
+);
+
+const kTextoCartPreco02 = Text(
+  '\$ 717,80',
+  style: TextStyle(
+    fontWeight: FontWeight.w800,
+    fontSize: 20,
+    color: Colors.black,
+  ),
+);
+
+const kTextoAddCart = Text(
+  'ADD TO CART',
+  style: TextStyle(
+    color: Colors.white,
+    fontWeight: FontWeight.bold,
+  ),
+);
+
+const kTextoShareThis = Text(
+  'SHARE THIS',
+  style: TextStyle(
+    color: kColorSplashAppBarMenus,
+    fontWeight: FontWeight.bold,
+  ),
+);
+
+const kTextoCheckout = Text(
+  'CHECKOUT',
+  style: TextStyle(
+    color: Colors.white,
+    fontWeight: FontWeight.bold,
+  ),
+);
+
+const kTextoOrderPlaced = Text(
+  'ORDER PLACED!',
+  style: TextStyle(
+    color: kColorSplashAppBarMenus,
+    fontWeight: FontWeight.bold,
+    fontSize: 30,
+  ),
+);

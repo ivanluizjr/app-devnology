@@ -1,10 +1,14 @@
+import 'package:app_devnology/src/presentation/controllers/bloc/router_event.dart';
+import 'package:app_devnology/src/presentation/utils/constants/colors_constants.dart';
 import 'package:app_devnology/src/presentation/utils/constants/text_constants.dart';
 import 'package:app_devnology/src/presentation/widgets/app_bar_product_widget.dart';
+import 'package:app_devnology/src/presentation/widgets/custom_buttons_end.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../controllers/bloc/router_bloc.dart';
 import '../controllers/bloc/router_state.dart';
+import '../views/cart_page_view.dart';
 import '../views/product_page_view.dart';
 import 'transition_widget.dart';
 
@@ -20,6 +24,10 @@ class _PrincipalPageImplementationWidgetState
     extends State<ProductPageImplementationWidget> {
   final RouterBloc routerBloc = RouterBloc();
 
+  _onTap() {
+    routerBloc.add(CartPageEvent());
+  }
+
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<RouterBloc, RouterState>(
@@ -29,6 +37,12 @@ class _PrincipalPageImplementationWidgetState
           Navigator.of(context).push(
             TransitionWidget(
               page: const ProductPageView(),
+            ),
+          );
+        } else if (state is CartPageState) {
+          Navigator.of(context).push(
+            TransitionWidget(
+              page: const CartPageView(),
             ),
           );
         }
@@ -65,7 +79,7 @@ class _PrincipalPageImplementationWidgetState
                 ),
               ),
               const SizedBox(
-                height: 20,
+                height: 15,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -74,7 +88,7 @@ class _PrincipalPageImplementationWidgetState
                 ),
               ),
               const SizedBox(
-                height: 15,
+                height: 10,
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -82,10 +96,52 @@ class _PrincipalPageImplementationWidgetState
                   children: const [kTextoProductPage02],
                 ),
               ),
-              Container(
-                height: 15,
-                width: 25,
-                color: Colors.red,
+              Expanded(
+                child: Container(
+                  height: 60,
+                  width: double.maxFinite,
+                  color: kColorBottomProduct,
+                  child: Stack(
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Row(
+                            children: [
+                              CustomButtomEnd(
+                                  icon: const Icon(
+                                    Icons.keyboard_arrow_right,
+                                    color: kColorSplashAppBarMenus,
+                                    size: 40,
+                                  ),
+                                  color: Colors.white,
+                                  text: kTextoShareThis,
+                                  onTap: () {}),
+                              const SizedBox(
+                                width: 40,
+                              ),
+                              CustomButtomEnd(
+                                icon: const Icon(
+                                  Icons.keyboard_arrow_right,
+                                  color: Colors.white,
+                                  size: 40,
+                                ),
+                                color: kColorSplashAppBarMenus,
+                                text: kTextoAddCart,
+                                onTap: () {
+                                  _onTap();
+                                },
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),

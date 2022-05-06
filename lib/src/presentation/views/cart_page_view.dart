@@ -1,3 +1,4 @@
+import 'package:app_devnology/src/presentation/widgets/cart_page_implementation_widget.dart';
 import 'package:flutter/material.dart';
 
 class CartPageView extends StatelessWidget {
@@ -5,10 +6,6 @@ class CartPageView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Cart'),
-      ),
-    );
+    return const CartPageImplementationWidget();
   }
 }
