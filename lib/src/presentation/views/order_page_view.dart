@@ -1,5 +1,7 @@
+import 'package:app_devnology/src/presentation/utils/constants/colors_constants.dart';
 import 'package:app_devnology/src/presentation/utils/constants/text_constants.dart';
 import 'package:app_devnology/src/presentation/widgets/app_bar_product_widget.dart';
+import 'package:app_devnology/src/presentation/widgets/custom_buttons_end.dart';
 import 'package:app_devnology/src/presentation/widgets/order_checkout_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -30,9 +32,39 @@ class _OrderPageViewState extends State<OrderPageView> {
             const SizedBox(
               height: 40,
             ),
-            Row(children: const [
-              kTextoOrderPlaced,
-            ]),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                kTextoOrderPlaced,
+              ],
+            ),
+            const SizedBox(
+              height: 40,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                kTextoOrderPlaced01,
+              ],
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CustomButtomEnd(
+                  onTap: () {},
+                  text: kTextoOrderBottom,
+                  color: kColorSplashAppBarMenus,
+                  icon: const Icon(
+                    Icons.keyboard_arrow_right,
+                    color: Colors.white,
+                    size: 40,
+                  ),
+                )
+              ],
+            ),
           ],
         ),
       ),
