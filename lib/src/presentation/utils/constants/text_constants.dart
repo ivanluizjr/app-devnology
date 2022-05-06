@@ -208,3 +208,21 @@ const kTextoOrderPlaced = Text(
     fontSize: 30,
   ),
 );
+
+const kTextoOrderPlaced01 = Text(
+  'Your order was placed successfully. For\n'
+  'more details, check All My Orders page\n'
+  'under Profile tab',
+  textAlign: TextAlign.center,
+  style: TextStyle(
+    fontSize: 18,
+  ),
+);
+
+const kTextoOrderBottom = Text(
+  'MY ORDERS',
+  style: TextStyle(
+    color: Colors.white,
+    fontWeight: FontWeight.bold,
+  ),
+);
