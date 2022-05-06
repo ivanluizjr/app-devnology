@@ -35,7 +35,8 @@ Este projeto foi um desafio para construir um projeto do zero, onde o objetivo e
  # :iphone: Layout do App
   
   
- 
+ ![App_DevNoLogy](https://user-images.githubusercontent.com/41458938/167058628-43ad5303-55ef-4d4b-babb-ffc11eb767fd.gif)
+
    
   #
   
