@@ -12,6 +12,7 @@ import '../utils/constants/text_constants.dart';
 import '../views/home_page_view.dart';
 import '../views/product_page_view.dart';
 import 'app_bar_home_widget.dart';
+import 'bottom_navigaton_bar_widget.dart';
 import 'transition_widget.dart';
 
 class HomePageImplementationWidget extends StatefulWidget {
@@ -59,11 +60,9 @@ class _HomePageImplementationWidgetState
             ),
           );
         } else if (state is NullPageState) {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: ((context) => const HomePageView()),
-            ),
-          );
+          Navigator.of(context).push(TransitionWidget(
+            page: const HomePageView(),
+          ));
         }
       },
       builder: (context, state) {
@@ -338,45 +337,8 @@ class _HomePageImplementationWidgetState
               ),
             ],
           ),
-          bottomNavigationBar: BottomNavigationBar(
-            type: BottomNavigationBarType.fixed,
-            backgroundColor: kColorSplashAppBarMenus,
-            iconSize: 30,
-            items: const [
-              BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.home_outlined,
-                  ),
-                  label: 'Home'),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.search_rounded,
-                ),
-                label: 'Search',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.shopping_cart_outlined,
-                ),
-                label: 'Cart',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.person_outline_outlined,
-                ),
-                label: 'Profile',
-              ),
-              BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.menu,
-                ),
-                label: 'More',
-              ),
-            ],
+          bottomNavigationBar: BottomNavigationBarWidget(
             currentIndex: _pageIndex,
-            unselectedFontSize: 15,
-            unselectedItemColor: Colors.white,
-            selectedItemColor: Colors.amber,
             onTap: (index) {
               setState(
                 () {

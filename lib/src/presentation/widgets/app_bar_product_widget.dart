@@ -38,26 +38,6 @@ class AppBarProductWidget extends StatelessWidget
           ),
         ],
       ),
-      // title: Stack(
-      //   children: [
-      //     Column(
-      //       mainAxisAlignment: MainAxisAlignment.center,
-      //       children: [
-      //         Image.asset(
-      //           'assets/images/logo_devnology.png',
-      //           height: 28,
-      //           fit: BoxFit.cover,
-      //         ),
-      //       ],
-      //     ),
-      //     Row(
-      //       mainAxisAlignment: MainAxisAlignment.end,
-      //       children: const [
-      //         Icon(Icons.shopping_cart_outlined),
-      //       ],
-      //     )
-      //   ],
-      // ),
     );
   }
 }
