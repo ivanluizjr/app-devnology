@@ -2,11 +2,9 @@
 
 Este projeto foi um desafio para construir um projeto do zero, onde o objetivo era somente fazer a navegação entre as telas.
 
-## :heavy_check_mark: Telas de projeto e fluxo a seguir
+## :heavy_check_mark: Telas do projeto e fluxo a seguir
 
-![tela_web_01](https://user-images.githubusercontent.com/41458938/165120241-f67ecc68-be76-4c38-b229-a6038dcfc925.png)
-
-![tela_web_02](https://user-images.githubusercontent.com/41458938/165120278-c1120d3a-de1f-4a93-a219-f930562df6b5.png)
+![layout_projeto](https://user-images.githubusercontent.com/41458938/167051850-b56fd1d8-4526-4a67-be19-4683559eba69.png)
   
 ## :computer: Tecnologias, APIs, Packages utilizados:
   
@@ -17,7 +15,7 @@ Este projeto foi um desafio para construir um projeto do zero, onde o objetivo e
 
 ## :file_folder: Organização de pastas e arquivos do projeto:
 
-![pastas_projeto](https://user-images.githubusercontent.com/41458938/165124915-219d6eeb-242c-40b0-b788-552927b3694e.png)
+![organização_pastas](https://user-images.githubusercontent.com/41458938/167051848-b36dd23f-8147-4ee1-ae3e-8a3ed4fd0d4b.png)
 
   
 ## :keyboard: Estágios de desenvolvimento do projeto:
@@ -36,9 +34,7 @@ Este projeto foi um desafio para construir um projeto do zero, onde o objetivo e
 
  # :iphone: Layout do App
   
-  ![Authentication_Tokio_01](https://user-images.githubusercontent.com/41458938/165128634-30332d30-2d1f-4146-bac2-4785c666cb3c.gif)
-  ![Authentication_Tokio_02](https://user-images.githubusercontent.com/41458938/165128855-8d095d88-b00c-4f90-b56d-f4beee01bd2a.gif)
-  ![Authentication_Tokio_03](https://user-images.githubusercontent.com/41458938/165132139-e82ccb6e-641d-4a1f-8ef1-ac50f7fb3e8d.gif)
+  
  
    
   #
